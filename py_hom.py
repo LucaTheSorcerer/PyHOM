@@ -247,7 +247,7 @@ def main():
 
 
     print("\n==============================================")
-    print("          METHOD 2: PHYSICS INTEGRAL          ")
+    print("          METHOD: PHYSICS INTEGRAL          ")
     print("==============================================")
     print("Mass/Integral Statistics:")
     plate_area = X1 * X2
@@ -259,10 +259,10 @@ def main():
     print()
     print("Frequency Results:")
     print(f"  10\t\t{10 * freq_ratio_int:.9f}\t{freq_ratio_int:.9f}".replace('.', ','))
-    print("  \t\tcu atat se schimba frecventa\t")
+    print("  \t\tFrequency changes with\t")
     print()
-    print(f"  frecventa cu masa\t{f_with_mass_int:.6f} Hz".replace('.', ','))
-    print(f"  frecventa fara masa\t{f_ref:.6f} Hz".replace('.', ','))
+    print(f"  Frequency with mass\t{f_with_mass_int:.6f} Hz".replace('.', ','))
+    print(f"  Frequency without mass\t{f_ref:.6f} Hz".replace('.', ','))
     print("==============================================\n")
 
 
