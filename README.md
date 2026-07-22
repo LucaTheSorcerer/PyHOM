@@ -24,19 +24,17 @@ This is a fast analytical proxy for FEM: you get frequency estimates in seconds 
 
 ---
 
-## Method (short)
+## Method
 
 Natural frequency scales with modal mass under a pure mass perturbation (stiffness and mode shape assumed unchanged):
 
-$$
-\frac{f_{\text{defect}}}{f_{\text{healthy}}} = \sqrt{\frac{M^*_{\text{healthy}}}{M^*_{\text{defect}}}}
-$$
+```math
+\frac{f_{\mathrm{defect}}}{f_{\mathrm{healthy}}} = \sqrt{\frac{M^{*}_{\mathrm{healthy}}}{M^{*}_{\mathrm{defect}}}}
+```
 
-Modal mass is obtained from the double integral of the squared mode shape (trapezoidal rule on a $101 \times 101$ grid). In the patch region, density is scaled by the **mass ratio**.
+Modal mass is obtained from the double integral of the squared mode shape (trapezoidal rule on a 101×101 grid). In the patch region, density is scaled by the **mass ratio**.
 
-Clamped–clamped beam eigenvalues $\lambda$ for modes 1–6 are built into the script.
-
-For a fuller derivation, see [`Integral_Method_Explanation.md`](Integral_Method_Explanation.md).
+Clamped–clamped beam eigenvalues λ for modes 1–6 are built into the script.
 
 ---
 
@@ -114,7 +112,7 @@ Fixed batch assumptions (matching the validation setup):
 | Python Integral Frequency with added mass (Hz) | Script prediction              |
 | Absolute Error (Hz)                            | \|FEM − Python\|               |
 
-The output is compatible with [`plot_validation.py`](plot_validation.py) for parity / heatmap plots.
+The output is compatible with for parity / heatmap plots.
 
 ---
 
