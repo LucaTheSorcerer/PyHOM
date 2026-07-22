@@ -1,4 +1,4 @@
-# py_hom.py — 2D Plate Vibration Analysis
+# 2D Plate Vibration Analysis
 
 CLI tool that estimates how an added mass patch changes the natural frequencies of a **clamped–clamped rectangular plate**.
 
