@@ -261,8 +261,8 @@ def main():
     print(f"  10\t\t{10 * freq_ratio_int:.9f}\t{freq_ratio_int:.9f}".replace('.', ','))
     print("  \t\tFrequency changes with\t")
     print()
-    print(f"  Frequency with mass\t{f_with_mass_int:.6f} Hz".replace('.', ','))
-    print(f"  Frequency without mass\t{f_ref:.6f} Hz".replace('.', ','))
+    print(f"  The Frequency with mass\t{f_with_mass_int:.6f} Hz".replace('.', ','))
+    print(f"  The Frequency without mass\t{f_ref:.6f} Hz".replace('.', ','))
     print("==============================================\n")
 
 
